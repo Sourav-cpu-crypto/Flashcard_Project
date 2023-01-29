@@ -19,9 +19,11 @@ function AddTerm({
   touched,
 }) {
   const focustext = useRef();
-  const Edit = () => {
-    // focustext.current.focus();
+  const Edit = (e) => {
+
+    focustext.current.focus();
     alert('edit')
+    e.preventDefault();
   };
 
   return (
@@ -135,7 +137,7 @@ function AddTerm({
               ) : (
                 <div className="mt-3 ml-5">
                   <div>
-                    <button onClick={Edit}>
+                    <button type="button" onClick={(e)=>Edit()}>
                       <FiEdit />
                     </button>
                   </div>

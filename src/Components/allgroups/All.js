@@ -43,13 +43,13 @@ const All = () => {
   console.log('data', data);
   const [all, setall] = useState({
     showall: 'false',
-    mincards: false,
+    possiblecards: false,
     cardslength: 0,
   });
 
-  function mincardshow() {}
+
   useEffect(() => {
-    seeall1(fgroup);
+    seeall1();
   }, [fgroup]);
   useEffect(() => {
     setfgroup(data);

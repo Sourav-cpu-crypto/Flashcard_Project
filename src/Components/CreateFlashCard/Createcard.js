@@ -15,7 +15,7 @@ const Createcard = () => {
   const uuid=uuidv4 ();
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const [alert, setAlert] = useState('false')
+
 
 
   const validationSchema = Yup.object().shape({
@@ -33,19 +33,8 @@ const Createcard = () => {
     ),
   });
 
-  if (alert === 'true') {
-    Swal.fire({
-      icon: 'success',
-      title: 'FlashCard Created Successfully',
-      confirmButtonText: 'Save',
-    }).then((result) => {
-      /* Read more about isConfirmed, isDenied below */
-      if (result.isConfirmed) {
-        navigate('/allfcard');
-      }
-    });
-  }
-  
+
+
 
   return (
     <div className="">
@@ -62,7 +51,25 @@ const Createcard = () => {
 
           setSubmitting(false);
           dispatch(createflashcard({ ...values, gid: '' }));
-          setAlert('true');
+          
+            
+              Swal.fire({
+                icon: 'success',
+                title: 'FlashCard Created Successfully',
+                confirmButtonText: 'Save',
+              }).then((result) => {
+           
+                if (result.isConfirmed) {
+                  navigate('/allfcard');
+                }
+              });
+            
+ 
+
+
+
+   
+ 
         }}
       >
         {({
@@ -93,7 +100,7 @@ const Createcard = () => {
                   term={values.terms[0].term}
                   desc={values.terms[0].desc}
                   img={values.terms[0].img}
-                  setAlert={setAlert}
+                
                 />
               ) : (
                 <FieldArray
