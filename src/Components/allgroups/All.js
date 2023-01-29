@@ -43,13 +43,13 @@ const All = () => {
   console.log('data', data);
   const [all, setall] = useState({
     showall: 'false',
-    mincards: false,
+    possiblecards: false,
     cardslength: 0,
   });
 
-  function mincardshow() {}
+
   useEffect(() => {
-    seeall1(fgroup);
+    seeall1();
   }, [fgroup]);
   useEffect(() => {
     setfgroup(data);
@@ -102,7 +102,9 @@ const All = () => {
                     alt=""
                   />
                   <strong className="pt-12 ">{card.gname}</strong>
-                  <p className="text-center line-clamp-2 h-12 text-ellipsis overflow-hidden">
+                  <p className="text-center line-clamp-2 h-12 text-ellipsis
+                  break-all
+                   overflow-hidden">
                     {card.gdef}
                   </p>
                   <p className="text-center mt-2">
@@ -169,7 +171,8 @@ const All = () => {
                     alt=""
                   />
                   <strong className="pt-12 ">{card.gname}</strong>
-                  <p className="text-center line-clamp-2 h-12 text-ellipsis overflow-hidden">
+                  <p className="text-center line-clamp-2
+                  break-all h-12 text-ellipsis overflow-hidden">
                     {card.gdef}
                   </p>
                   <p className="text-center mt-2">
