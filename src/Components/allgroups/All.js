@@ -103,7 +103,8 @@ const All = () => {
                   />
                   <strong className="pt-12 ">{card.gname}</strong>
                   <p className="text-center line-clamp-2 h-12 text-ellipsis
-                  card.gdef overflow-hidden">
+                  break-all
+                   overflow-hidden">
                     {card.gdef}
                   </p>
                   <p className="text-center mt-2">
