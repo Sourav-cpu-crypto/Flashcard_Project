@@ -102,7 +102,8 @@ const All = () => {
                     alt=""
                   />
                   <strong className="pt-12 ">{card.gname}</strong>
-                  <p className="text-center line-clamp-2 h-12 text-ellipsis overflow-hidden">
+                  <p className="text-center line-clamp-2 h-12 text-ellipsis
+                  card.gdef overflow-hidden">
                     {card.gdef}
                   </p>
                   <p className="text-center mt-2">
@@ -169,7 +170,8 @@ const All = () => {
                     alt=""
                   />
                   <strong className="pt-12 ">{card.gname}</strong>
-                  <p className="text-center line-clamp-2 h-12 text-ellipsis overflow-hidden">
+                  <p className="text-center line-clamp-2
+                  break-all h-12 text-ellipsis overflow-hidden">
                     {card.gdef}
                   </p>
                   <p className="text-center mt-2">
