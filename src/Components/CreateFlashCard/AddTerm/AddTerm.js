@@ -13,7 +13,6 @@ function AddTerm({
   arrayHelpers,
   index,
   setFieldValue,
-  onClick1,
   values,
   errors,
   touched,
@@ -22,7 +21,6 @@ function AddTerm({
   const Edit = (e) => {
 
     focustext.current.focus();
-    alert('edit')
     e.preventDefaul();
   };
 
