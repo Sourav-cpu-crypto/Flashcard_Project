@@ -7,8 +7,8 @@ function Uploadimage({ setFieldValue, errors, touched, values }) {
 
   return (
     <div>
-      <div className="show_file">
-        <label className=" flex flex-row bg-white text-blue rounded border border-black md:ml-2 mt-7 items-center pl-2 sm:w-full md:w-2/6">
+        <div className="show_file flex  sm:justify-start text-sky-500 ">
+        <label className=" flex flex-row bg-white text-blue rounded border border-sky-500 hover:text-white hover:bg-sky-500 md:ml-2 mt-7 items-center pl-2 w-36 h-8  ">
           <GrDocumentUpload />
           <span className="p-2 text-base leading-normal">Upload Image</span>
           <input

@@ -11,21 +11,21 @@ function CreateGroup({
   onChange,
 }) {
   return (
-    <div className="mt-5 max-w-[1100px] mx-auto bg-white p-7 ">
-      <div className="grid sm:grid-rows md:grid-cols-2">
+    <div className="mt-10 max-w-[1100px] mx-3 rounded-md lg:mx-auto  bg-white p-3 sm:p-7 active:scale-y-110 ">
+      <div className=" bg-white   grid grid-rows sm:grid-cols-2">
         <div>
           <h3>Create Group*</h3>
           <input
             type={'text'}
             id="gname"
             name="gname"
-            className="rounded-md w-full mb-3 border-2 border-current p-2 "
+            className="rounded-md sm:w-full mb-3 border-2 border-current p-2 h-10 w-full "
             placeholder="write the name of group"
             onChange={handlechange}
           ></input>
           {errors.gname && touched.gname ? errors.gname : null}
         </div>
-        <div className="ml-7">
+        <div className="sm:ml-7">
           {values?.file ? (
             <div>
               <button

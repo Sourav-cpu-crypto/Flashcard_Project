@@ -18,7 +18,7 @@ const TermCards = ({
         groupcarddetails?.terms === undefined ? (
           ''
         ) : (
-          <div className="grid sm:grid-rows md:grid-cols-2 items-center bg-white gap-2 p-4 justify-center ">
+          <div className="grid sm:grid-rows md:grid-cols-2 items-center bg-white gap-2 p-4 justify-center md:w-full w-5/6 mx-auto">
             <div className=" ">
               {groupcarddetails.terms[id2 - 1].img === '' ||
               groupcarddetails.terms[id2 - 1].img === undefined ||
@@ -26,7 +26,7 @@ const TermCards = ({
                 ''
               ) : (
                 <img
-                  className="h-60 w-full rounded-lg"
+                  className="h-60 w-60 mx-auto rounded-lg"
                   src={groupcarddetails.terms[id2 - 1].img}
                   alt=""
                 ></img>
