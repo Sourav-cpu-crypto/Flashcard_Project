@@ -90,23 +90,20 @@ const All = () => {
   console.log('all', all);
   console.log('fetchdata', fgroup);
   return (
-    <div className="max-w-[1100px] mx-auto">
-      <div className="grid mb-10 sm:grid-rows md:grid-cols-3 gap-1  ">
+    <div className="max-w-[1100px] mx-auto sm:p-2  ">
+      <div className="  grid grid-cols-1   mx-5   mb-5 sm:mb-10   sm:grid-cols-2 md:grid-cols-3 gap-1  ">
         {fgroup !== 'false'
           ? all?.cardslength > 6 && all?.showall === 'false'
             ? all.possiblecards.map((card) => (
-                <div className="border border-grey-400 drop-shadow-lg relative grid justify-items-center bg-white mt-14">
+              <div className="border border-grey-400 drop-shadow-lg relative 
+              grid justify-items-center bg-white mt-14 hover:scale-y-105 w-full   sm:w-auto">
                   <img
                     src={card.file}
                     className="h-20  w-15 absolute top-[-2.5rem] img"
                     alt=""
                   />
                   <strong className="pt-12 ">{card.gname}</strong>
-                  <p className="text-center line-clamp-2 h-12 text-ellipsis
-                  break-all
-                   overflow-hidden">
-                    {card.gdef}
-                  </p>
+                  <p className="text-center w-5/6 line-clamp-2  break-all overflow-hidden">{card.gdef}</p>
                   <p className="text-center mt-2">
                     {card.terms
                       ? card.terms.length === 1
@@ -229,7 +226,7 @@ const All = () => {
             : ''
           : ''}
       </div>
-      <div className="flex flex-end">
+      <div className="flex justify-center sm:justify-end">
         {all?.cardslength > 6 && all?.showall === 'false' ? (
           <button
             className="text-red-600 font-bold text-2xl mb-2 "

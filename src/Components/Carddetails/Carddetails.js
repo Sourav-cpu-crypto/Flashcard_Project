@@ -158,7 +158,7 @@ const Carddetails = () => {
           <BsArrowLeft />
         </Link>
         <div>
-          <h3 className="font-bold text-black text-xl">{`${groupcarddetails.gname}`}</h3>
+          <h3 className="font-bold text-black text-xl ">{`${groupcarddetails.gname}`}</h3>
           <p className="mt-3">{`${groupcarddetails.gdef}`}</p>
         </div>
       </div>
@@ -170,8 +170,8 @@ const Carddetails = () => {
         ''
       )}
       {beforeorafterprint == 'false' ? (
-        <div className="grid sm:grid-rows md:grid-cols-4 mt-6 gap-2 ">
-          <div className=" bg-white">
+        <div className="  md:grid  md:grid-cols-4 mt-6 gap-2 ">
+          <div className=" bg-white mx-auto w-5/6 md:w-full ">
             {groupcarddetails?.terms === '' ||
             groupcarddetails?.terms === undefined ? (
               ''
@@ -199,22 +199,24 @@ const Carddetails = () => {
               />
             )}
           </div>
-          <div>
-            <div className="flex flex-col mt-7">
+          <div className=''>
+          
+            <div className="grid grid-cols-1  mx-2  w-70 mt-7">
               <div>
                 <button
                   onClick={openModal}
-                  className=" flex flex-row bg-white text-blue rounded ml-2 mt-2 items-center pl-2 w-3/4"
+                  className=" flex flex-row bg-white text-blue w-1/2 rounded ml-2 mt-2 items-center pl-2 "
+
                 >
                   <FaShare />
-                  <span className="p-1 text-base leading-normal">Share</span>
+                  <span className="p-1 ml-1text-base leading-normal ">Share</span>
                   <input type="" className="hidden" />
                 </button>
               </div>
               <div className="mt-3">
                 <button
                   onClick={downloadcompdownload}
-                  className=" flex flex-row bg-white text-blue rounded ml-2 mt-2 items-center pl-2 w-3/4"
+                  className=" flex flex-row bg-white text-blue rounded ml-2 mt-2 items-center pl-2 w-1/2"
                 >
                   <FiDownload onClick={() => download} />
                   <span className="p-1 text-base leading-normal">Download</span>
@@ -223,7 +225,7 @@ const Carddetails = () => {
               <div className="mt-3">
                 <button
                   onClick={handleButtonClick}
-                  className=" flex flex-row bg-white text-blue rounded ml-2 mt-2 items-center pl-2 w-3/4"
+                  className=" flex flex-row bg-white text-blue rounded ml-2 mt-2 items-center pl-2 w-1/2 mb-10"
                 >
                   <FiPrinter />
                   <span className="p-1 text-base leading-normal">Print</span>

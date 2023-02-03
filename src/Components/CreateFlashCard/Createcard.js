@@ -90,7 +90,7 @@ const Createcard = () => {
               handlechange={handleChange}
             />
 
-            <div className=" mt-5 max-w-[1100px] mx-auto bg-white mb-2">
+<div className=" mt-5 max-w-[1100px] mx-3 rounded-md lg:mx-auto bg-white mb-2 sm:p-7 ">
               {values?.gname === '' || values?.gdef === '' ? (
                 <AddTerm
                   handlechange={handleChange}
@@ -132,7 +132,7 @@ const Createcard = () => {
                       <div>
                         {values.gname !== '' && values.gdef !== '' ? (
                           <button
-                            className="text-sky-800 pl-6 pb-3 font-bold"
+                          className="text-sky-800 pl-6 pb-3 font-bold md:mt-0 mt-4"
                             type="button"
                             onClick={() => arrayHelpers.push('')}
                           >
@@ -150,7 +150,7 @@ const Createcard = () => {
             <div className="flex justify-center mb-5">
               <button
                 type="submit"
-                className="btn text-center mt-5 pl-12 pt-1 pb-1 pr-12 text-white bg-red-600"
+                className="btn text-center mt-5 pl-12 pt-1 pb-1 pr-12 text-white bg-red-600 focus:scale-95    transition ease-in-out delay-150 "
                 disabled={isSubmitting}
               >
                 Create
