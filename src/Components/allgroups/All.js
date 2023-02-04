@@ -96,7 +96,8 @@ const All = () => {
           ? all?.cardslength > 6 && all?.showall === 'false'
             ? all.possiblecards.map((card) => (
               <div className="border border-grey-400 drop-shadow-lg relative 
-              grid justify-items-center bg-white mt-14 hover:scale-y-105 w-full   sm:w-auto">
+              grid justify-items-center bg-white mt-14 hover:scale-y-105 w-full  
+               sm:w-auto">
                   <img
                     src={card.file}
                     className="h-20  w-15 absolute top-[-2.5rem] img"
@@ -133,26 +134,22 @@ const All = () => {
                     contentLabel="Example Modal"
                   >
                     <div className="w-96 rounded p-5">
-                      <img
-                        src={info}
-                        className="h-20  w-15 absolute top-[-2.5rem] img"
-                        alt={info}
-                      />
+                      <img src={info} className="center" alt="" />
                       <h3 className="font-bold text-center">
                         Do You Want To Delete This Card
                       </h3>
                       <div className="mt-3 flex justify-center gap-3 w-100">
                         <button
-                          className="btn text-center mt-5 pt-1 pb-1 font-bold mb-3 text-red-600 border-2 border-red-600 pl-4 pr-4"
+                          className="btn text-center mt-5 pt-1 pb-1 font-bold mb-3 bg-green-600 text-white border-2 border-green-600 pl-4 pr-4"
                           onClick={deletecard}
                         >
-                          Ok
+                          Yes, Delete it!
                         </button>
                         <button
-                          className="btn text-center mt-5 pt-1 pb-1 font-bold mb-3 text-red-600 border-2 border-red-600 pl-2 pr-2"
+                          className="btn text-center mt-5 pt-1 pb-1 font-bold mb-3 bg-red-600 border-2 border-red-600 text-white pl-2 pr-2"
                           onClick={closeModal}
                         >
-                          Cancel
+                          No, Cancel!
                         </button>
                       </div>
                     </div>
