@@ -56,6 +56,7 @@ function AddTerm({
                   type={'text'}
                   ref={focustext}
                   name={term}
+                  jj
                   className="rounded-md mb-3 h-12 border-2  border-current p-4 w-full  "
                   placeholder="write the name of group"
                 />
