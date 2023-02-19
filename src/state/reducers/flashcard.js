@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 const INIT_STATE = [];
 
 const cardReducer = (state = INIT_STATE, action) => {
-  const uuid=uuidv4 ();
+
   switch (action.type) {
 
     case CREATE_CARD:
