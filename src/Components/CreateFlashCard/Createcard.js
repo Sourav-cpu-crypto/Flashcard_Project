@@ -12,7 +12,7 @@ import { useState } from "react";
 
 
 const Createcard = () => {
-  const uuid=uuidv4 ();
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -47,10 +47,11 @@ const Createcard = () => {
           terms: [{ term: '', desc: '', img: null }],
         }}
         onSubmit={(values, { setSubmitting }) => {
+          const uuid=uuidv4 ();
           console.log({ values, gid: uuid });
 
           setSubmitting(false);
-          dispatch(createflashcard({ ...values, gid: '' }));
+          dispatch(createflashcard({ ...values, gid: uuid }));
           
             
               Swal.fire({

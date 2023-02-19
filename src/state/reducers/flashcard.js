@@ -9,7 +9,7 @@ const cardReducer = (state = INIT_STATE, action) => {
 
     case CREATE_CARD:
       let gid=action.payload.gid;
-      return [...state,{...action.payload,gid:uuid}];
+      return [...state,{...action.payload}];
 
         case DELETE_CARD:
     
