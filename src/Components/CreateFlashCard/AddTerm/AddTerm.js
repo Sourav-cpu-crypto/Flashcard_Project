@@ -23,7 +23,7 @@ function AddTerm({
 
     focustext.current.focus();
     // alert('edit')
-    e.preventDefaul();
+    e.preventDefault();
   };
 
   return (
