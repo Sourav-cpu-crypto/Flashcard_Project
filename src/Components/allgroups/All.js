@@ -103,7 +103,7 @@ const All = () => {
               />
               <strong className="pt-12 ">{card.gname}</strong>
               <p className="text-center line-clamp-2
-              break-all h-12 text-ellipsis overflow-hidden">
+              break-all h-12 w-3/4 text-ellipsis overflow-hidden">
                 {card.gdef}
               </p>
               <p className="text-center mt-2">
@@ -116,7 +116,8 @@ const All = () => {
               <div className="flex flex-row gap-3">
                 <Link
                   to={`/groupdetails/${card.gid}/1`}
-                  className="btn text-center mt-5 pt-1 pb-1 font-bold mb-3 text-red-600 border-2 border-red-600 pl-2 pr-2"
+                  className="btn text-center mt-5 pt-1 pb-1 font-bold mb-3 
+                  text-red-600 border-2 border-red-600 pl-2 pr-2"
                 >
                   View Cards
                 </Link>
@@ -167,7 +168,7 @@ const All = () => {
               />
               <strong className="pt-12 ">{card.gname}</strong>
               <p className="text-center line-clamp-2
-              break-all h-12 text-ellipsis overflow-hidden">
+              break-all h-12 text-ellipsis overflow-hidden w-3/4">
                 {card.gdef}
               </p>
               <p className="text-center mt-2">
