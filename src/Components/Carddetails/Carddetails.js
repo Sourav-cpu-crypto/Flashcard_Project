@@ -199,13 +199,13 @@ const Carddetails = () => {
               />
             )}
           </div>
-          <div className=''>
+          <div >
           
-            <div className="grid grid-cols-1  mx-2  w-70 mt-7">
+            <div className="grid grid-cols-1  mx-2  w-70 ">
               <div>
                 <button
                   onClick={openModal}
-                  className=" flex flex-row bg-white text-blue w-1/2 rounded ml-2 mt-2 items-center pl-2 "
+                  className=" flex flex-row bg-white text-blue w-1/2 rounded ml-2  items-center pl-2 "
 
                 >
                   <FaShare />

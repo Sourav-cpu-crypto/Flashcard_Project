@@ -100,6 +100,7 @@ function AddTerm({
             touched.terms[index].desc ? (
               <div>{errors.terms[index].desc}</div>
             ) : null}
+
           </div>
           <div className="flex md:ml-0 ml-10 ">
             {disabled1 === 'true' ? (
@@ -113,7 +114,7 @@ function AddTerm({
             ) : (
               <>
                 {values?.terms[index].img ? (
-                  <div>
+                  <div >
                     <button
                       className="text-red-600"
                       onClick={() => {

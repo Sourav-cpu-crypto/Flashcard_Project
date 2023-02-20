@@ -91,11 +91,14 @@ const All = () => {
   console.log('fetchdata', fgroup);
   return (
     <div className="max-w-[1100px] mx-auto sm:p-2  ">
-      <div className="  grid grid-cols-1   mx-5   mb-5 sm:mb-10   sm:grid-cols-2 md:grid-cols-3 gap-1  ">
+      <div className="  grid grid-cols-1   
+      mx-5   mb-5 sm:mb-10   sm:grid-cols-2 md:grid-cols-3 gap-1  ">
         {fgroup !== 'false'
           ? all?.cardslength > 6 && all?.showall === 'false'
             ? all.possiblecards.map((card) => (
-              <div className="border border-grey-400 drop-shadow-lg relative grid justify-items-center bg-white mt-14">
+              <div className="
+              border border-grey-400 drop-shadow-lg relative grid 
+              justify-items-center bg-white mt-14">
               <img
                 src={card.file}
                 className="h-20  w-15 absolute top-[-2.5rem] img"
@@ -160,15 +163,16 @@ const All = () => {
               ))
             : all?.possiblecards
             ? all?.possiblecards.map((card) => (
-              <div className="border border-grey-400 drop-shadow-lg relative grid justify-items-center bg-white mt-14">
+              <div className="border border-grey-400 
+              drop-shadow-lg relative grid justify-items-center bg-white mt-14">
               <img
                 src={card.file}
                 className="h-20  w-15 absolute top-[-2.5rem] img"
                 alt=""
               />
               <strong className="pt-12 ">{card.gname}</strong>
-              <p className="text-center line-clamp-2
-              break-all h-12 text-ellipsis overflow-hidden w-3/4">
+              <p className="text-center line-clamp-2 
+break-all h-12 text-ellipsis overflow-hidden w-3/4">
                 {card.gdef}
               </p>
               <p className="text-center mt-2">

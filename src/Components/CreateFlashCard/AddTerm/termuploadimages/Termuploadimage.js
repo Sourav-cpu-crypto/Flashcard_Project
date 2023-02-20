@@ -27,7 +27,7 @@ const Termuploadimage = ({ setFieldValue, values, img }) => {
         ''
       )}
 
-      {/* {console.log("kj",Uimage?.file)} */}
+   
     </div>
   );
 };

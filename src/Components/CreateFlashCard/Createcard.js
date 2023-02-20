@@ -46,6 +46,7 @@ const Createcard = () => {
           file: null,
           terms: [{ term: '', desc: '', img: null }],
         }}
+
         onSubmit={(values, { setSubmitting }) => {
           const uuid=uuidv4 ();
           console.log({ values, gid: uuid });
@@ -53,7 +54,7 @@ const Createcard = () => {
           setSubmitting(false);
           dispatch(createflashcard({ ...values, gid: uuid }));
           
-            
+            //alert to cardcreation
               Swal.fire({
                 icon: 'success',
                 title: 'FlashCard Created Successfully',
@@ -133,7 +134,8 @@ const Createcard = () => {
                       <div>
                         {values.gname !== '' && values.gdef !== '' ? (
                           <button
-                          className="text-sky-800 pl-6 pb-3 font-bold md:mt-0 mt-4"
+                          className="text-sky-800 pl-6 
+                           md:ml-[60px] sm:ml-[40px]   pb-3 font-bold md:mt-0 mt-4"
                             type="button"
                             onClick={() => arrayHelpers.push('')}
                           >
