@@ -135,7 +135,7 @@ const Createcard = () => {
                         {values.gname !== '' && values.gdef !== '' ? (
                           <button
                           className="text-sky-800 pl-6 
-                           md:ml-[60px] sm:ml-[40px]   pb-3 font-bold md:mt-0 mt-4"
+                           ml-[60px]   pb-3 font-bold md:mt-0 mt-4"
                             type="button"
                             onClick={() => arrayHelpers.push('')}
                           >
